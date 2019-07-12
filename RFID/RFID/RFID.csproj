@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65AD3D53-1E93-4E4B-9E5D-51B41E0179C1}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{122416d6-6b49-4ee2-a1e8-b825f31c79fe}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RFID</RootNamespace>
+    <AssemblyName>RFID</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AMapActivity.cs" />
+    <Compile Include="AppResource.Designer.cs" />
+    <Compile Include="AppResource.en.Designer.cs" />
+    <Compile Include="Common\AddCarrierResquest.cs" />
+    <Compile Include="D2ReadActivity.cs" />
+    <Compile Include="Effect\EntryRemoveLineEffect.cs" />
+    <Compile Include="Layout\Checkbox.cs" />
+    <Compile Include="Layout\CheckColor.cs" />
+    <Compile Include="Layout\Design.cs" />
+    <Compile Include="Layout\EditorCell.cs" />
+    <Compile Include="Layout\FuncView.cs" />
+    <Compile Include="Layout\MineCell.cs" />
+    <Compile Include="Layout\NewEntryCell.cs" />
+    <Compile Include="Layout\NewImageCell.cs" />
+    <Compile Include="Layout\NoBorderEntry.cs" />
+    <Compile Include="Layout\PasswordEntryCell.cs" />
+    <Compile Include="Layout\PdfWebView.cs" />
+    <Compile Include="Layout\PhotoCell.cs" />
+    <Compile Include="Layout\PhotoView.cs" />
+    <Compile Include="Layout\QRCodeCell.cs" />
+    <Compile Include="Layout\SelectCell.cs" />
+    <Compile Include="Layout\Shape.cs" />
+    <Compile Include="Layout\TakePhotoEventArgs.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="MyApplication.cs" />
+    <Compile Include="NFCActivity.cs" />
+    <Compile Include="Renderer\NoBorderEntryRenderer.cs" />
+    <Compile Include="Renderer\PasswordEntryCellRenderer.cs" />
+    <Compile Include="Renderer\ReadNFCPageRender.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AccompanimentService.cs" />
+    <Compile Include="Services\ApiHelper.cs" />
+    <Compile Include="Services\ConfigrationOfModelD2Service.cs" />
+    <Compile Include="Services\D2InventoryService.cs" />
+    <Compile Include="Services\IDataStore.cs" />
+    <Compile Include="Services\ILocalFileProvider.cs" />
+    <Compile Include="Services\ILocalize.cs" />
+    <Compile Include="Services\InventoryService.cs" />
+    <Compile Include="Services\IQRCodeScanService.cs" />
+    <Compile Include="Services\LocalizeHelper.cs" />
+    <Compile Include="Services\QRCodeScanService.cs" />
+    <Compile Include="SplashActivity.cs" />
+    <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="Views\BlackTextNavigationPage.cs" />
+    <Compile Include="Views\CarPage.cs" />
+    <Compile Include="Views\ChangePwdPage.cs" />
+    <Compile Include="Views\CheckLockPage.cs" />
+    <Compile Include="Views\DataPage.cs" />
+    <Compile Include="Views\DriverPage.cs" />
+    <Compile Include="Views\EndLockPage.cs" />
+    <Compile Include="Views\ExceptionPage.cs" />
+    <Compile Include="Views\HelpPage.cs" />
+    <Compile Include="Views\HomePage.cs" />
+    <Compile Include="Views\LockLocationPage.cs" />
+    <Compile Include="Views\LockPage.cs" />
+    <Compile Include="Views\LoginPage.cs" />
+    <Compile Include="Views\MainPage.cs" />
+    <Compile Include="Views\MinePage.cs" />
+    <Compile Include="Views\PdfJsPage.cs" />
+    <Compile Include="Views\QueryLockPage.cs" />
+    <Compile Include="Views\QueryPage.cs" />
+    <Compile Include="Views\QueryUploadPage.cs" />
+    <Compile Include="Views\ReLockPage.cs" />
+    <Compile Include="Views\ScanPage.cs" />
+    <Compile Include="Views\UhfPage.cs" />
+    <Compile Include="Views\UploadPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Bookmark.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\calendar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Camera.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\delete.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\error.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\exception.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Export.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Key.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\location.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\login_bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\login_bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LogoHeader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\main_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\nfc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Picture.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Plus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\read.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Repeat.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rightarrow.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\setting.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\target.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\update.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\upload.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\user.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\whitelock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\login_bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\Photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\Photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\amap_layout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\nfc_layout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\rfid_layout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tag_inventoried.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\style.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\file_paths.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppResource.en.resx" />
+    <EmbeddedResource Include="AppResource.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Amap2D">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Amap2D.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="FastAndroidCamera">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\FastAndroidCamera.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\FFImageLoading.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Forms">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\FFImageLoading.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Forms.Platform">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\FFImageLoading.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Platform">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\FFImageLoading.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Svg.Forms">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\FFImageLoading.Svg.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Svg.Platform">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\FFImageLoading.Svg.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\ImageCircle.Forms.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Security" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.CurrentActivity">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Plugin.CurrentActivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Plugin.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Forms">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Prism.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Unity.Forms">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Prism.Unity.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="PropertyChanged">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\PropertyChanged.dll</HintPath>
+    </Reference>
+    <Reference Include="SenterOpenApi">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\SenterOpenApi.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Android">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\SkiaSharp.Views.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Forms">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\SkiaSharp.Views.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Internals" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Toasty">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Toasty.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Annotations">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.UI">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.Utils">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.CustomTabs">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.CustomTabs.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Fragment">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Fragment.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Media.Compat">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Transition">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Transition.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.Palette">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.v7.Palette.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Extended.InfiniteScrolling">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Forms.Extended.InfiniteScrolling.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Core">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\ZXing.Net.Mobile.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Forms">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\ZXing.Net.Mobile.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Forms.Android">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\ZXing.Net.Mobile.Forms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.portable">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\zxing.portable.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXingNetMobile">
+      <HintPath>..\..\铅封\福州封铅APP\RFID.Android\assemblies\ZXingNetMobile.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+  -->
+</Project>

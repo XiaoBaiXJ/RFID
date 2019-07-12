@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="launcher_background">#FFFFFF</color>
+    <color name="nfcbackground">#EDEDED</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorToolbar">#FFFFFF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+     <color name="colorWarning">#FF0000</color>
+     <color name="colorError">#00FFFF</color>
+     <color name="colorSuccess">#00FF00</color>
+     <color name="colorInfo">#0000FF</color>
+    <color name="colorToastText">#FFFFFF</color>
+</resources>

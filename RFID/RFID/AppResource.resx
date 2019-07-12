@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="home_title" xml:space="preserve">
+    <value>物流防盗</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>请输入用户名</value>
+  </data>
+  <data name="server" xml:space="preserve">
+    <value>服务器设置</value>
+  </data>
+  <data name="read" xml:space="preserve">
+    <value>读取铅封</value>
+  </data>
+  <data name="exception" xml:space="preserve">
+    <value>提交异常</value>
+  </data>
+  <data name="upload" xml:space="preserve">
+    <value>上传运单</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="data" xml:space="preserve">
+    <value>数据同步</value>
+  </data>
+  <data name="help" xml:space="preserve">
+    <value>使用帮助</value>
+  </data>
+  <data name="inputserver" xml:space="preserve">
+    <value>输入服务器地址</value>
+  </data>
+  <data name="confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="setsuccess" xml:space="preserve">
+    <value>设置成功</value>
+  </data>
+  <data name="servererror" xml:space="preserve">
+    <value>输入的服务器地址有误</value>
+  </data>
+  <data name="query" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="home" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="mine" xml:space="preserve">
+    <value>我的</value>
+  </data>
+  <data name="uhfno" xml:space="preserve">
+    <value>不支持超高频读取功能</value>
+  </data>
+  <data name="exit" xml:space="preserve">
+    <value>退出登录</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>报废铅封</value>
+  </data>
+  <data name="scanmode" xml:space="preserve">
+    <value>读取铅封模式</value>
+  </data>
+  <data name="remember" xml:space="preserve">
+    <value>记住密码</value>
+  </data>
+  <data name="outline" xml:space="preserve">
+    <value>离线登录</value>
+  </data>
+  <data name="qrcodemode" xml:space="preserve">
+    <value>当前二维码扫描模式</value>
+  </data>
+  <data name="nfcmode" xml:space="preserve">
+    <value>当前NFC读取模式</value>
+  </data>
+  <data name="uhfmode" xml:space="preserve">
+    <value>当前超高频读取模式</value>
+  </data>
+  <data name="qrcode" xml:space="preserve">
+    <value>二维码扫描模式</value>
+  </data>
+  <data name="nfc" xml:space="preserve">
+    <value>NFC读取模式</value>
+  </data>
+  <data name="uhf" xml:space="preserve">
+    <value>超高频读取模式</value>
+  </data>
+  <data name="modeselect" xml:space="preserve">
+    <value>读取模式选择</value>
+  </data>
+  <data name="pwdchange" xml:space="preserve">
+    <value>修改密码</value>
+  </data>
+  <data name="nfcread" xml:space="preserve">
+    <value>「 请将手持端背部识别区域靠近铅封 」</value>
+  </data>
+  <data name="nonfc" xml:space="preserve">
+    <value>该设备不支持NFC功能</value>
+  </data>
+  <data name="qrerror" xml:space="preserve">
+    <value>非法二维码禁止使用</value>
+  </data>
+  <data name="sacndetail" xml:space="preserve">
+    <value>请将图片对准扫描框</value>
+  </data>
+  <data name="scan" xml:space="preserve">
+    <value>扫一扫</value>
+  </data>
+  <data name="unknowntag" xml:space="preserve">
+    <value>无法识别标签</value>
+  </data>
+  <data name="nfc_unable" xml:space="preserve">
+    <value>NFC功能未开启!</value>
+  </data>
+  <data name="not_outline" xml:space="preserve">
+    <value>未登录过的用户不允许离线登录!</value>
+  </data>
+  <data name="login_null" xml:space="preserve">
+    <value>用户名或密码错误</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>输入查询或添加</value>
+  </data>
+  <data name="car_title" xml:space="preserve">
+    <value>选择或添加施封车辆</value>
+  </data>
+  <data name="car" xml:space="preserve">
+    <value>选择车辆</value>
+  </data>
+  <data name="curaddress" xml:space="preserve">
+    <value>当前地址</value>
+  </data>
+  <data name="locating" xml:space="preserve">
+    <value>获取定位信息中</value>
+  </data>
+  <data name="checklock" xml:space="preserve">
+    <value>巡检</value>
+  </data>
+  <data name="lockend" xml:space="preserve">
+    <value>拆封</value>
+  </data>
+  <data name="carinfo" xml:space="preserve">
+    <value>车辆信息</value>
+  </data>
+  <data name="starttime" xml:space="preserve">
+    <value>起始时间</value>
+  </data>
+  <data name="lockplace" xml:space="preserve">
+    <value>施封位置</value>
+  </data>
+  <data name="isdelete" xml:space="preserve">
+    <value>确认报废此封条吗</value>
+  </data>
+  <data name="deleteinfo" xml:space="preserve">
+    <value>铅封关联信息</value>
+  </data>
+  <data name="acar" xml:space="preserve">
+    <value>车辆</value>
+  </data>
+  <data name="pleaseselect" xml:space="preserve">
+    <value>请选择</value>
+  </data>
+  <data name="takephoto" xml:space="preserve">
+    <value>拍照</value>
+  </data>
+  <data name="album" xml:space="preserve">
+    <value>从相册选择</value>
+  </data>
+  <data name="nophoto" xml:space="preserve">
+    <value>该设备没有拍照功能</value>
+  </data>
+  <data name="noalbum" xml:space="preserve">
+    <value>没有访问相册权限</value>
+  </data>
+  <data name="driver" xml:space="preserve">
+    <value>承运人</value>
+  </data>
+  <data name="place" xml:space="preserve">
+    <value>锁定位置</value>
+  </data>
+  <data name="qianfengno" xml:space="preserve">
+    <value>铅封编号</value>
+  </data>
+  <data name="qianfengphoto" xml:space="preserve">
+    <value>铅封照片</value>
+  </data>
+  <data name="carhint" xml:space="preserve">
+    <value>选择车辆</value>
+  </data>
+  <data name="driverhint" xml:space="preserve">
+    <value>选择承运人</value>
+  </data>
+  <data name="qrcodehint" xml:space="preserve">
+    <value>输入或扫一扫铅封编号</value>
+  </data>
+  <data name="placehint" xml:space="preserve">
+    <value>选择施封位置</value>
+  </data>
+  <data name="arrival" xml:space="preserve">
+    <value>目的地址</value>
+  </data>
+  <data name="arrivalhint" xml:space="preserve">
+    <value>输入目的地址</value>
+  </data>
+  <data name="shifeng" xml:space="preserve">
+    <value>施封</value>
+  </data>
+  <data name="newpwd" xml:space="preserve">
+    <value>新建密码</value>
+  </data>
+  <data name="oldpwd" xml:space="preserve">
+    <value>原始密码</value>
+  </data>
+  <data name="repwd" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="changesuccess" xml:space="preserve">
+    <value>修改成功</value>
+  </data>
+  <data name="uhfset" xml:space="preserve">
+    <value>超高频设置</value>
+  </data>
+  <data name="powerset" xml:space="preserve">
+    <value>功率设置</value>
+  </data>
+  <data name="power" xml:space="preserve">
+    <value>当前功率</value>
+  </data>
+  <data name="carex" xml:space="preserve">
+    <value>运输中车辆</value>
+  </data>
+  <data name="checkphoto" xml:space="preserve">
+    <value>巡检照片</value>
+  </data>
+  <data name="endphoto" xml:space="preserve">
+    <value>拆封照片</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>提交信息</value>
+  </data>
+  <data name="delivery" xml:space="preserve">
+    <value>运单描述</value>
+  </data>
+  <data name="deliveryphoto" xml:space="preserve">
+    <value>运单照片</value>
+  </data>
+    <data name="exphoto" xml:space="preserve">
+    <value>异常图片</value>
+  </data>
+    <data name="explace" xml:space="preserve">
+    <value>异常位置</value>
+  </data>
+    <data name="exinfo" xml:space="preserve">
+    <value>异常信息</value>
+  </data>
+    <data name="explease" xml:space="preserve">
+    <value>请输入异常信息</value>
+  </data>
+  <data name="exsubmit" xml:space="preserve">
+    <value>提交异常</value>
+  </data>
+    <data name="shaixuan" xml:space="preserve">
+    <value>筛选</value>
+  </data>
+     <data name="please" xml:space="preserve">
+    <value>请输入</value>
+  </data>
+</root>
